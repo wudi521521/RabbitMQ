@@ -1,5 +1,604 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5d980f1f-d6d2-4cdb-bbd9-fa5bc53c97f1" name="Default Changelist" comment="">
+      <change afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/controller/EducationSalaryController.java" afterDir="false" />
+      <change afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/dao/EducationSalaryMapper.java" afterDir="false" />
+      <change afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/dao/EducationSalaryMapper.xml" afterDir="false" />
+      <change afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/entity/TEducationSalary.java" afterDir="false" />
+      <change afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/entity/TPositionSalaryDTO.java" afterDir="false" />
+      <change afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/impl/EducationSalaryServiceImpl.java" afterDir="false" />
+      <change afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/service/EducationSalaryService.java" afterDir="false" />
+      <change afterPath="D:/20190114/SSM01/src/main/java/test/BufferedImageLuminanceSource.java" afterDir="false" />
+      <change afterPath="D:/20190114/SSM01/src/main/webapp/WEB-INF/view/Book/error.jsp" afterDir="false" />
+      <change afterPath="D:/20190114/SSM01/src/main/webapp/WEB-INF/view/Book/position_salary_find.jsp" afterDir="false" />
+      <change afterPath="D:/20190114/SSM01/src/main/webapp/WEB-INF/view/Book/right.jsp" afterDir="false" />
+      <change afterPath="D:/20190114/SSM01/src/main/webapp/WEB-INF/view/Education/education_salary_edit.jsp" afterDir="false" />
+      <change afterPath="D:/20190114/SSM01/src/main/webapp/WEB-INF/view/Education/education_salary_list.jsp" afterDir="false" />
+      <change afterPath="D:/20190618new/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="D:/20190618new/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="D:/20190618new/common" afterDir="false" />
+      <change afterPath="D:/20190618new/config-resources" afterDir="false" />
+      <change afterPath="D:/20190618new/config-server" afterDir="false" />
+      <change afterPath="D:/20190618new/learn-service" afterDir="false" />
+      <change afterPath="D:/20190618new/zuul-gateway" afterDir="false" />
+      <change afterPath="D:/20190704/wudi/src/main/java/com/wudi/spring/jdbc/wudi/BtraceController.java" afterDir="false" />
+      <change afterPath="D:/20190704/wudi/src/main/java/com/wudi/spring/jdbc/wudi/DataSouceDemo.java" afterDir="false" />
+      <change afterPath="D:/20190704/wudi/src/main/java/com/wudi/spring/jdbc/wudi/MemoryController.java" afterDir="false" />
+      <change afterPath="D:/20190704/wudi/src/main/java/com/wudi/spring/jdbc/wudi/PrintOnThrow.java" afterDir="false" />
+      <change afterPath="D:/20190704/wudi/src/main/java/com/wudi/spring/jdbc/wudi/User.java" afterDir="false" />
+      <change afterPath="D:/20190704/wudi/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wudi/rabbit/RabbitMQApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wudi/rabbit/producerandconsumer/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wudi/rabbit/producerandconsumer/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="D:/current_thread/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="D:/current_thread/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="D:/current_thread/src/five/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/five/timers1/Run1.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/five/timers2/Run1.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/five/timers2/Run2Later.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/five/timers3.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/five/timers4/Run2.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/five/timers4/Run3.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/five/timers5/Run3.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/five/timers5/Run4.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/five/timers6/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/five/timers7/Run1.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/five/timers8/Run5/Run5.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/five/timers8/Run5/Run6.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/Locks26/TestTimer.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks1/MyService.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks1/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks1/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks10/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks10/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks11/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks11/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks12/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks12/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks13/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks13/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks14/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks14/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks15/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks15/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks16/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks16/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks17/MySerivce.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks17/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks18/MyService.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks18/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks19/MyService.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks19/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks2/MyService.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks2/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks2/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks2/ThreadAA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks2/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks2/ThreadBB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks20/MyService.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks20/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks20/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks21/MyThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks21/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks22/MyThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks22/MyThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks22/Run1.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks22/Run2.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks22/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks23/F.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks23/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks24/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks24/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks24/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks24/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks25/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks25/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks3/MyService.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks3/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks3/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks4/MyService.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks4/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks4/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks5/MyService.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks5/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks5/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks5/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks6/MyService.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks6/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks6/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks6/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks7/MyService.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks7/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks7/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks7/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks7/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks8/RunNotFair.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks8/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks9/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/four/locks9/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread1/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread1/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread2/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread2/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread3/MyService.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread3/MyThread1.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread3/MyThread2.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread3/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread4/Lock.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread4/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread4/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread5/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread6/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread7/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread8/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread9/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/seven/thread9/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/six/single1/MyObject.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/six/single1/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/six/single1/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/six/single2/MyObject.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/six/single2/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/six/single2/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/six/single3/MyObject.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/six/single3/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/six/single3/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/six/single3/SaveAndHead.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/six/single4/MyObjext.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/six/single4/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/six/single4/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/StartThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/Suspend/Suspend1.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/Thread121.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/currentthread/CountOpreation.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/currentthread/Id.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/currentthread/IsAliveThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/currentthread/Mythread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/currentthread/SleepThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/guard/MyThread1.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/guard/RUn.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/interrupt/ExceptionThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/interrupt/MainThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/interrupt/Mythread1.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/interrupt/Mythread2.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/interrupt/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/login/LoginServlet.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/priority/MyThread1.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/priority/MyThread2.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/priority/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/priority2/MyThread1.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/priority2/MyThread2.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/priority2/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/priority3/MyThread1.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/priority3/MyThread2.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/priority3/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/resume/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/resume/Run1.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/resume/SysnchronizedObject.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/runnable/MyRunnable.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/runnable/NoShareData.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/runnable/ShareData.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/sleep/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/sleep/SleepThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/stop/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/stop/MyThread1.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/stop/Mythread3.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/stop/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/yield/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/threads/yield/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join/ThreadC.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join1/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join1/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join2/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join2/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join2/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join2/ThreadC.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join3/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join4/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join5/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join5/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join5/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join5/Tools.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join6/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join6/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join6/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join6/ThreadLocalExt.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join6/Tools.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join7/InheritableThreadLocalExt.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join7/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join7/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/join7/Tools.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one10/MyRun.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one11/Add.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one11/Subtract.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one11/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one11/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one11/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one11/ValueObject.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one12/C.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one12/P.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one12/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one12/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one12/ThreadC.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one12/ThreadP.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one12/ValueObject.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one13/C.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one13/MyStack.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one13/P.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one13/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one13/ThreadC.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one13/ThreadP.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one2/Test1.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one2/Test2.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one3/MyThread1.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one3/MyThread2.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one3/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one4/MyList.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one4/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one4/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one4/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one5/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one5/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one5/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one5/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one6/NotifyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one6/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one6/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one6/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one6/synNotfyMethodThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one7/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one7/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one7/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one8/NotifyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one8/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one8/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one8/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one8/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one8/ThreadC.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/one9/MyRunnable.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/stream/ReadData.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/stream/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/stream/ThreadRead.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/stream/ThreadWrite.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/stream/WriteData.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/waitnotifytest/BackUpA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/waitnotifytest/BackUpB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/waitnotifytest/DBTools.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/three/waitnotifytest/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/dd.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/dirtyread/PublicVar.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/dirtyread/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/dirtyread/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/exceptions/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/exceptions/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/exceptions/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/exceptions/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/hase/HaseSelfPrivate.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/hase/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/hase/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/hase/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/object1/MyThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/object1/MyThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/object1/ObjectService.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/object1/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/private/HbasePrivateObject.kt" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/private2/Main.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/private2/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/private2/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/private2/Sub.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/string1/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/string1/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/string1/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/string2/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/string2/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/string2/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/string2/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synblockstring/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synblockstring/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synblockstring/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synblockstring/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synblockstring2/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synblockstring2/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synblockstring3/MyList.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synblockstring3/MyThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synblockstring3/MyThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synblockstring3/Test.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized1/MyObject.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized1/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized1/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized1/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized2/CommonUtils.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized2/MyThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized2/MyThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized2/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized2/Task2.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized229/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized229/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized229/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized229/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized4/ObjectService.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized4/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized4/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronized4/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronizeds/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronizeds/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronizeds/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronzied2291/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronzied2291/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronzied2291/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronzied2291/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/synchronzied2291/ThreadC.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/task1/MyThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/task1/MyThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/task1/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two/task1/Task.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/inners/PublicClass.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/locks/MyService.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/locks/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/locks/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/one2/DealThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/one2/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/one3/PrintString.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/one3/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/one4/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/one4/RunThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/one5/MyThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/one5/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/one6/AddCountThread.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/one6/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/one7/Run.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/one7/Service.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/one7/ThreadA.java" afterDir="false" />
+      <change afterPath="D:/current_thread/src/two2/one1/one7/ThreadB.java" afterDir="false" />
+      <change afterPath="D:/shengtong/STHttpDemo/123.wav" afterDir="false" />
+      <change afterPath="D:/shengtong/STHttpDemo/Aa.mp3" afterDir="false" />
+      <change afterPath="D:/shengtong/untitled/src/demo/one/OneTest.java" afterDir="false" />
+      <change afterPath="D:/shengtong/untitled/src/demo/one/OneTest2.java" afterDir="false" />
+      <change afterPath="D:/shengtong/untitled/src/demo/one/OneTest3.java" afterDir="false" />
+      <change beforePath="D:/1234564321/Ueditor2019/.idea/artifacts/Ueditor2019_war.xml" beforeDir="false" afterPath="D:/1234564321/Ueditor2019/.idea/artifacts/Ueditor2019_war.xml" afterDir="false" />
+      <change beforePath="D:/1234564321/Ueditor2019/src/demo/QiniuHelper.java" beforeDir="false" afterPath="D:/1234564321/Ueditor2019/src/demo/QiniuHelper.java" afterDir="false" />
+      <change beforePath="D:/20190114/SSM01/.idea/misc.xml" beforeDir="false" afterPath="D:/20190114/SSM01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/controller/PositionSalaryController.java" beforeDir="false" afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/controller/PositionSalaryController.java" afterDir="false" />
+      <change beforePath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/dao/TCompanySalaryMapper.xml" beforeDir="false" afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/dao/TCompanySalaryMapper.xml" afterDir="false" />
+      <change beforePath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/dao/TPositionSalaryMapper.java" beforeDir="false" afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/dao/TPositionSalaryMapper.java" afterDir="false" />
+      <change beforePath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/dao/TPositionSalaryMapper.xml" beforeDir="false" afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/dao/TPositionSalaryMapper.xml" afterDir="false" />
+      <change beforePath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/entity/TCompanySalary.java" beforeDir="false" afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/entity/TCompanySalary.java" afterDir="false" />
+      <change beforePath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/entity/TPositionSalary.java" beforeDir="false" afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/entity/TPositionSalary.java" afterDir="false" />
+      <change beforePath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/impl/PositionSalaryServiceImpl.java" beforeDir="false" afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/impl/PositionSalaryServiceImpl.java" afterDir="false" />
+      <change beforePath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/service/PositionSalaryService.java" beforeDir="false" afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/service/PositionSalaryService.java" afterDir="false" />
+      <change beforePath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/utils/ResponseCodeEnum.java" beforeDir="false" afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/utils/ResponseCodeEnum.java" afterDir="false" />
+      <change beforePath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/utils/ResultResponse.java" beforeDir="false" afterPath="D:/20190114/SSM01/src/main/java/com/lmei/ssm/utils/ResultResponse.java" afterDir="false" />
+      <change beforePath="D:/20190114/SSM01/src/main/webapp/WEB-INF/view/Book/company_salary_edit.jsp" beforeDir="false" afterPath="D:/20190114/SSM01/src/main/webapp/WEB-INF/view/Book/company_salary_edit.jsp" afterDir="false" />
+      <change beforePath="D:/20190114/SSM01/src/main/webapp/WEB-INF/view/Book/position_salary_edit.jsp" beforeDir="false" afterPath="D:/20190114/SSM01/src/main/webapp/WEB-INF/view/Book/position_salary_edit.jsp" afterDir="false" />
+      <change beforePath="D:/20190114/SSM01/src/main/webapp/WEB-INF/view/Book/position_salary_list.jsp" beforeDir="false" afterPath="D:/20190114/SSM01/src/main/webapp/WEB-INF/view/Book/position_salary_list.jsp" afterDir="false" />
+      <change beforePath="D:/20190117101/Web/pom.xml" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/ActionEnter.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/ConfigManager.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/Encoder.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/PathFormat.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/define/ActionMap.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/define/ActionState.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/define/AppInfo.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/define/BaseState.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/define/FileType.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/define/MIMEType.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/define/MultiState.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/define/State.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/hunter/FileManager.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/hunter/ImageHunter.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/upload/Base64Uploader.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/upload/BinaryUploader.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/upload/StorageManager.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/java/com/baidu/ueditor/upload/Uploader.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/config.json" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/controller.jsp" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/lib/commons-codec-1.9.jar" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/lib/commons-io-2.4.jar" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/lib/json.jar" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/lib/ueditor-1.1.2.jar" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/ActionEnter.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/ConfigManager.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/Encoder.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/PathFormat.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/define/ActionMap.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/define/ActionState.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/define/AppInfo.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/define/BaseState.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/define/FileType.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/define/MIMEType.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/define/MultiState.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/define/State.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/hunter/FileManager.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/hunter/ImageHunter.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/upload/Base64Uploader.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/upload/BinaryUploader.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/upload/StorageManager.java" beforeDir="false" />
+      <change beforePath="D:/20190119/SSM01/src/main/webapp/jsp/src/com/baidu/ueditor/upload/Uploader.java" beforeDir="false" />
+      <change beforePath="D:/20190120/3-UEditor/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/.idea/artifacts/demo.xml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/.idea/artifacts/demo_war_exploded.xml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/.idea/libraries/Maven__com_google_code_gson_gson_2_3_1.xml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/.idea/libraries/Maven__com_qiniu_qiniu_java_sdk_7_0_8.xml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/.idea/libraries/Maven__com_squareup_okhttp_okhttp_2_7_1.xml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/.idea/libraries/Maven__com_squareup_okio_okio_1_6_0.xml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/.idea/libraries/Maven__org_json_json_20160212.xml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/demo.iml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/web/UEditorPage.jsp" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/web/index.html" beforeDir="false" />
+      <change beforePath="D:/20190120/cnblogs-example-master/3-UEditor上传图片到七牛云储存（java）/web/web.xml" beforeDir="false" />
+      <change beforePath="D:/20190618new/erp-data-service" beforeDir="false" afterPath="D:/20190618new/erp-data-service" afterDir="false" />
+      <change beforePath="D:/20190618new/homework-service" beforeDir="false" afterPath="D:/20190618new/homework-service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="D:/232323222222222222222/Ueditor2019/.idea/artifacts/Ueditor2019_war.xml" beforeDir="false" afterPath="D:/232323222222222222222/Ueditor2019/.idea/artifacts/Ueditor2019_war.xml" afterDir="false" />
+      <change beforePath="D:/232323222222222222222/Ueditor2019/.idea/compiler.xml" beforeDir="false" afterPath="D:/232323222222222222222/Ueditor2019/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="D:/232323222222222222222/Ueditor2019/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" beforeDir="false" afterPath="D:/232323222222222222222/Ueditor2019/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" afterDir="false" />
+      <change beforePath="D:/232323222222222222222/Ueditor2019/pom.xml" beforeDir="false" afterPath="D:/232323222222222222222/Ueditor2019/pom.xml" afterDir="false" />
+      <change beforePath="D:/QiNiuWithUeditor/.idea/QiNiuWithUeditor.iml" beforeDir="false" />
+      <change beforePath="D:/QiNiuWithUeditor/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="D:/QiNiuWithUeditor/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="D:/QiNiuWithUeditor/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="D:/QiNiuWithUeditor/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="D:/Ueditor2019/pom.xml" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1480306002">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="2" />
+          <entry key="fxml" value="1" />
+          <entry key="java" value="4" />
+          <entry key="xml" value="1" />
+          <entry key="yml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="4" />
+          <entry key="XML" value="2" />
+          <entry key="YAML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="8" />
+          <entry key="java" value="1243" />
+          <entry key="xml" value="53" />
+          <entry key="yml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1243" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="XML" value="53" />
+          <entry key="YAML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wudi/rabbit/producerandconsumer/Customer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="68" lean-forward="true" selection-start-line="12" selection-end-line="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.1.2/amqp-client-5.1.2.jar!/com/rabbitmq/client/Channel.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.1.2/amqp-client-5.1.2.jar!/com/rabbitmq/client/impl/ChannelN.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="487" column="44" selection-start-line="487" selection-start-column="36" selection-end-line="487" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wudi/rabbit/producerandconsumer/Producer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="37" column="27" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="37" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wudi/rabbit/RabbitMQApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
       <map>
@@ -7,7 +606,43 @@
       </map>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/RabbitMQApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wudi/rabbit/RabbitMQApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wudi/rabbit/producerandconsumer/Consumer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wudi/rabbit/producerandconsumer/Producer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wudi/rabbit/producerandconsumer/Customer.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="RabbitMQDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="RabbitMQDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -46,18 +681,133 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="RabbitMQDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitMQDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RabbitMQDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitMQDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RabbitMQDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitMQDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RabbitMQDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitMQDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RabbitMQDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitMQDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RabbitMQDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitMQDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbit" type="462c0819:PsiDirectoryNode" />
+              <item name="producerandconsumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RabbitMQDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitMQDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570774674200" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wudi.rabbit" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\20191010AMQP\RabbitMQ\RabbitMQDemo\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Customer">
+    <configuration name="Customer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wudi.rabbit.producerandconsumer.Customer" />
+      <module name="RabbitMQDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wudi.rabbit.producerandconsumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wudi.rabbit.producerandconsumer.Producer" />
+      <module name="RabbitMQDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wudi.rabbit.producerandconsumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -105,8 +855,241 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RabbitMQApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="RabbitMQDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wudi.rabbit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wudi.rabbit.RabbitMQApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.RabbitMQApplication" />
+      <item itemvalue="Application.Producer" />
+      <item itemvalue="Application.Customer" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Customer" />
+        <item itemvalue="Application.Producer" />
+        <item itemvalue="Spring Boot.RabbitMQApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d980f1f-d6d2-4cdb-bbd9-fa5bc53c97f1" name="Default Changelist" comment="" />
+      <created>1570754157476</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570754157476</updated>
+      <workItem from="1570754160190" duration="8080000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8080000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15492958" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Run with VisualVM" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Debug with VisualVM" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30638298" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Mybatis datasource" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" weight="0.3293092" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/RabbitMQApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wudi/rabbit/RabbitMQApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.1.2/amqp-client-5.1.2.jar!/com/rabbitmq/client/Channel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.1.2/amqp-client-5.1.2.jar!/com/rabbitmq/client/impl/ChannelN.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="487" column="44" selection-start-line="487" selection-start-column="36" selection-end-line="487" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wudi/rabbit/producerandconsumer/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="37" column="27" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="37" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wudi/rabbit/producerandconsumer/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="68" lean-forward="true" selection-start-line="12" selection-end-line="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>RabbitMQDemo</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
