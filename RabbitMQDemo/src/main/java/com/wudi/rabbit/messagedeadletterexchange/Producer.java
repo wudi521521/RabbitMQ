@@ -1,7 +1,6 @@
- package com.wudi.rabbit.messagedeadletterqueue;
+ package com.wudi.rabbit.messagedeadletterexchange;
 
 import com.rabbitmq.client.*;
-import com.rabbitmq.client.impl.AMQBasicProperties;
 
 import java.io.IOException;
 

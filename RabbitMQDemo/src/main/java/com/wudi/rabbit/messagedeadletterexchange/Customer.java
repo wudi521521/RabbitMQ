@@ -1,4 +1,4 @@
-package com.wudi.rabbit.messagedeadletterqueue;
+package com.wudi.rabbit.messagedeadletterexchange;
 
 import com.rabbitmq.client.*;
 

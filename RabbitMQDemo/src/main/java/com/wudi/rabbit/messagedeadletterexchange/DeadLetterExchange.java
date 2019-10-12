@@ -1,10 +1,8 @@
-package com.wudi.rabbit.messagedeadletterqueue;
+package com.wudi.rabbit.messagedeadletterexchange;
 
 import com.rabbitmq.client.*;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author Dillon Wu
