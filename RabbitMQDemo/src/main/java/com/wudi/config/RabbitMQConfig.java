@@ -1,9 +1,11 @@
 package com.wudi.config;
 
 
+import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitAdmin;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -36,4 +38,42 @@ public class RabbitMQConfig {
 
         return rabbitAdmin;
     }
+
+    /**
+     * 按照这样可以添加多个，当项目开启的时候就会注入到容器里面
+     * @return
+     */
+
+    @Bean
+    public TopicExchange exchange001(){
+
+        return new TopicExchange("topic001",true,false); //持久交换机
+    }
+
+    @Bean
+    public Queue queue001(){
+
+        return new Queue("queue001",true); //持久队列
+    }
+
+    @Bean
+    public Binding binding001(){
+
+        return BindingBuilder.bind(queue001()).to(exchange001()).with("spring.#");
+    }
+
+    /**
+     * 定义RabbitTemplate模板
+     * @param connectionFactory
+     * @return
+     */
+    @Bean
+    public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory){
+
+        RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
+
+        return rabbitTemplate;
+    }
+
+
 }
