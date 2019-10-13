@@ -1,14 +1,20 @@
 package com.wudi.config;
 
 
+import com.rabbitmq.client.Channel;
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
+import org.springframework.amqp.rabbit.core.ChannelAwareMessageListener;
 import org.springframework.amqp.rabbit.core.RabbitAdmin;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
+import org.springframework.amqp.support.ConsumerTagStrategy;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+
+import java.util.UUID;
 
 /**
  * @author Dillon Wu
@@ -75,5 +81,42 @@ public class RabbitMQConfig {
         return rabbitTemplate;
     }
 
+    /**
+     * 定义SimpleMessageListenerContainer
+     * @param connectionFactory
+     * @return
+     */
+    @Bean
+    public SimpleMessageListenerContainer simpleMessageListenerContainer(ConnectionFactory connectionFactory){
+
+        SimpleMessageListenerContainer simpleMessageListenerContainer = new SimpleMessageListenerContainer(connectionFactory);
+
+        //监控多个队列
+        simpleMessageListenerContainer.setQueues(queue001());
+        //当前消费者的数据
+        simpleMessageListenerContainer.setConcurrentConsumers(1);
+        //最大消费者的数量
+        simpleMessageListenerContainer.setMaxConcurrentConsumers(5);
+        simpleMessageListenerContainer.setDefaultRequeueRejected(false);
+        //签收模式,自动签收
+        simpleMessageListenerContainer.setAcknowledgeMode(AcknowledgeMode.AUTO);
+        //自定义标签
+        simpleMessageListenerContainer.setConsumerTagStrategy(new ConsumerTagStrategy() {
+            @Override
+            public String createConsumerTag(String s) {
+                return s+"_"+ UUID.randomUUID().toString();
+            }
+        });
+        //监听
+        simpleMessageListenerContainer.setMessageListener(new ChannelAwareMessageListener() {
+            @Override
+            public void onMessage(Message message, Channel channel) throws Exception {
+                 //获取数据
+                String data = new String(message.getBody());
+                System.out.println("数据打印===监听:"+data);
+            }
+        });
+        return simpleMessageListenerContainer;
+    }
 
 }

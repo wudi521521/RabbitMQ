@@ -125,7 +125,7 @@ public class SpringAMQP {
         Message message = new Message("Hello RabbiMQ".getBytes(), messageProperties);
 
         //2:发送信息
-        rabbitTemplate.convertAndSend("exchange","routingKey",message);
+        rabbitTemplate.convertAndSend("topic001","spring.#",message);
 
     }
 }
