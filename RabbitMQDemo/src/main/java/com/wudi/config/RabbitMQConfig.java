@@ -2,6 +2,7 @@ package com.wudi.config;
 
 
 import com.rabbitmq.client.Channel;
+import com.wudi.amqp.MessageDelegate;
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
@@ -9,11 +10,14 @@ import org.springframework.amqp.rabbit.core.ChannelAwareMessageListener;
 import org.springframework.amqp.rabbit.core.RabbitAdmin;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
+import org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter;
 import org.springframework.amqp.support.ConsumerTagStrategy;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 /**
@@ -108,14 +112,33 @@ public class RabbitMQConfig {
             }
         });
         //监听
-        simpleMessageListenerContainer.setMessageListener(new ChannelAwareMessageListener() {
+     /* simpleMessageListenerContainer.setMessageListener(new ChannelAwareMessageListener() {
             @Override
             public void onMessage(Message message, Channel channel) throws Exception {
                  //获取数据
                 String data = new String(message.getBody());
                 System.out.println("数据打印===监听:"+data);
             }
-        });
+        });*/
+        //TODO 1:适配器的第一种方法
+
+        //使用适配器
+        MessageListenerAdapter messageListenerAdapter = new MessageListenerAdapter(new MessageDelegate());
+        //指定默认的处理方法
+        messageListenerAdapter.setDefaultListenerMethod("consumeMessage");
+        //放入适配器
+        simpleMessageListenerContainer.setMessageListener(messageListenerAdapter);
+        //添加一个转化器:从字节数组转换为String
+        simpleMessageListenerContainer.setMessageConverter(new TextMessageConverter());
+
+
+         //TODO 适配器方式:我们的队列名称和方法名称也可以进行一一的匹配
+        /*MessageListenerAdapter messageListenerAdapter = new MessageListenerAdapter(new MessageDelegate());
+        Map<String,String> queueOrTagMethodName = new HashMap<>();
+        queueOrTagMethodName.put("exchange","routingKey");
+
+        messageListenerAdapter.setQueueOrTagToMethodName(queueOrTagMethodName);
+        simpleMessageListenerContainer.setMessageListener(messageListenerAdapter);*/
         return simpleMessageListenerContainer;
     }
 

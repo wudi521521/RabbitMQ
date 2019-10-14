@@ -98,7 +98,7 @@ public class SpringAMQP {
         Message message = new Message("Hello RabbiMQ".getBytes(), messageProperties);
 
         //2:发送信息
-        rabbitTemplate.convertAndSend("test.topic.exchange", "test#", message, new MessagePostProcessor() {
+        rabbitTemplate.convertAndSend("topic001", "spring.#", message, new MessagePostProcessor() {
             //发送完消息在进行增加或者修改消息
             @Override
             public Message postProcessMessage(Message message) throws AmqpException {
